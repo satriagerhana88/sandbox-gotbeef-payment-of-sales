@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/List-Pembayaran.css">
+    <title>Sandbox - Mini POS</title>
+</head>
+<body>
+    <div class="container-mobile">
+      <!-- START STATUS BAR -->
+      <div class="status-bar">
+        <img src="Assets/status bar.png" alt="">
+      </div>
+      <!-- END STATUS BAR -->
+      
+      <!-- START HEADER -->
+      <div class="title">
+        <p>Konfirmasi Pembayaran Transaksi</p>
+      </div>
+      <!-- END HEADER -->
+
+      <!-- START CONTENT -->
+      <div class="section">
+        <!-- start search -->
+        <div class="search">
+          <img src="Assets/icon/search.svg" alt="">
+          <input type="text" placeholder="Cari Nama / Nomor Transaksi" name="search">
+        </div>
+        <!-- end search -->
+
+        <!-- start Filter -->
+        <div class="filter-status">
+          <div class="title-filter-aktif">
+            <p>Konfirmasi</p>
+            <div class="total-notifikasi ">
+              <p>2</p>
+            </div>
+          </div>
+          <div class="title-filter">
+            <p>Pending</p>
+          </div>
+          <div class="title-filter">
+            <p>Baru</p>
+            <div class="total-notifikasi">
+              <p>10</p>
+            </div>
+          </div>
+          <div class="title-filter">
+            <p>Proses</p>
+          </div>
+
+        </div>
+         <!-- end Filter -->
+
+        <!-- start list -->
+        <div class="container-list-pemabayaran">
+          
+          <!-- start list update -->
+          <div class="list-update">
+            <div class="title-list-update">
+              <p>Kamu memiliki <span>3 Pesanan</span> Terbaru</p>
+            </div>
+            <div class="list-update-konfirmasi">
+              <div class="container-list-update">
+                <div class="title-list">
+                  <p>SBX00019201</p>
+                  <p>Fiqri</p>
+                </div>
+                <div class="btn-konfirmasi">
+                  <button onclick="konfirmasi()">Konfirmasi</button>
+                </div>
+              </div>
+              <div class="container-list-update">
+                <div class="title-list">
+                  <p>SBX00019201</p>
+                  <p>Fiqri</p>
+                </div>
+                <div class="btn-konfirmasi">
+                  <button onclick="konfirmasi()">Konfirmasi</button>
+                </div>
+              </div>
+              <div class="container-list-update">
+                <div class="title-list">
+                  <p>SBX00019201</p>
+                  <p>Fiqri</p>
+                </div>
+                <div class="btn-konfirmasi">
+                  <button onclick="konfirmasi()">Konfirmasi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end list update -->
+
+          <!-- start list update -->
+          <div class="list-update">
+            <div class="title-list-update">
+              <p>Hari ini</p>
+            </div>
+            <div class="list-update-konfirmasi">
+              <div class="container-list">
+                <div class="title-list">
+                  <p>SBX00019201</p>
+                  <p>Fiqri</p>
+                </div>
+                <div class="btn-konfirmasi">
+                  <button onclick="konfirmasi()">Konfirmasi</button>
+                </div>
+              </div>
+              <div class="container-list">
+                <div class="title-list">
+                  <p>SBX00019201</p>
+                  <p>Fiqri</p>
+                </div>
+                <div class="btn-konfirmasi">
+                  <button onclick="konfirmasi()">Konfirmasi</button>
+                </div>
+              </div>
+              <div class="container-list">
+                <div class="title-list">
+                  <p>SBX00019201</p>
+                  <p>Fiqri</p>
+                </div>
+                <div class="btn-konfirmasi">
+                  <button onclick="konfirmasi()">Konfirmasi</button>
+                </div>
+              </div>
+              <div class="container-list">
+                <div class="title-list">
+                  <p>SBX00019201</p>
+                  <p>Fiqri</p>
+                </div>
+                <div class="btn-konfirmasi">
+                  <button onclick="konfirmasi()">Konfirmasi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end list update -->
+        </div>
+        <!-- end list -->
+
+        <!-- start menu bottom -->
+        <div class="menuBottom">
+          <a href="Home.html">
+            <button>
+              <img src="Assets/icon/Home.svg" alt="">
+            </button>
+          </a>
+  
+          <a href="Product.html">
+            <button>
+              <img src="Assets/icon/Product.svg" alt="">
+            </button>
+          </a>
+  
+          <a href="List-Pembayaran.html">
+            <button>
+              <img src="Assets/icon/List-Confirm-Active.svg" alt="">
+            </button>
+          </a>
+  
+          <a href="Akun.html">
+            <button>
+              <img src="Assets/icon/Profile.svg" alt="">
+            </button>
+          </a>
+        </div>
+        <!-- end menu bottom -->
+      </div>
+      <!-- END CONTENT -->
+      </div>
+
+      
+
+
+    <script src="Scripts/List-Pembayaran.js"></script>
+</body>
+</html>

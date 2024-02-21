@@ -1,0 +1,178 @@
+/* START GENERAL STYLE */
+@import url('https://fonts.cdnfonts.com/css/d-din');
+
+:root {
+    --hitam:#010101;
+    --abu: #BABABA;
+    --putih : #ffffff;
+    --hitam-button : #333333;
+    --kuning : #FFC535;
+    --kuning-hover : #ecae11;
+    --kuning-muda :#FFEE8E;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'D-DIN', sans-serif;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+.container-mobile{
+    width: 360px;
+    height: 800px;
+    margin: auto;
+    background-image: url(../Assets/Bg-Login.svg);
+}
+
+
+.status-bar{
+    margin-bottom: 52px;
+}
+/* START GENERAL STYLE */
+
+
+/* START DETAIL KASIR */
+.user-login{
+    width: 160px;
+    height: 85px;
+    margin: auto;
+    margin: 100px auto;
+}
+
+.user-login .profile p:nth-child(1){
+    font-size: 20px;
+    text-align: center;
+}
+
+.user-login .profile p:nth-child(2){
+    font-size: 15px;
+    text-align: center;
+}
+
+.user-login .profile {
+    margin-bottom: 16px;
+}
+
+.btn-aktif button{
+    width: 89px;
+    height: 27px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-color: var(--kuning-muda);
+}
+
+.btn-aktif {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+/* END DETAIL KASIR */
+
+/* START CONTENT */
+.section{
+    width: 360px;
+    height: 495px;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--putih);
+    padding: 32px 16px;
+}
+
+/* START MENU PROFILE */
+.setting-profile{
+    width: 328px;
+    height: 122px;
+    margin-bottom: 166px;
+}
+
+.setting-profile .btn-ubah-profile{
+    width: 328px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--kuning);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+}
+
+.setting-profile .btn-ubah-password{
+    width: 328px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--putih);
+    border: 1px solid var(--kuning);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+}
+
+.section .btn-keluar{
+    width: 328px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--putih);
+    border: 1px solid var(--kuning);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+    margin-bottom: 60px;
+}
+
+.setting-profile button img, 
+.section .btn-keluar img{
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+/* END MENU PROFILE */
+
+/* START MENU */
+.menuBottom{
+    width: 310px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.menuBottom button{
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menuBottom button:hover{
+    background-color: var(--kuning);
+    border-radius: 15px;
+}
+/* END MENU */
+/* END CONTENT */

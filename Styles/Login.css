@@ -1,0 +1,344 @@
+@import url('https://fonts.cdnfonts.com/css/d-din');
+
+:root {
+    --hitam:#010101;
+    --abu: #BABABA;
+    --putih : #ffffff;
+    --hitam-button : #333333;
+    --kuning : #FFC535;
+    --kuning-hover : #ecae11;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'D-DIN', sans-serif;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+.container-mobile{
+    width: 360px;
+    height: 800px;
+    margin: auto;
+    background-image: url(../Assets/Bg-Login.svg);
+}
+
+
+.status-bar{
+    margin-bottom: 52px;
+}
+
+
+
+
+.logo-sandbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+}
+
+.form-login{
+    width: 360px;
+    height: 535px;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--putih);
+    padding: 0 16px;
+}
+
+.text-form p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 42px;
+}
+
+form{
+    height: 198px;
+    margin-bottom: 41px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input label{
+    font-size: 14px;
+}
+
+.form-input input[type=text] {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid var(--abu);
+    background-color: var(--putih);
+    background-image: url('../Assets/icon/mail-line.svg');
+    background-position: 20px 20px; 
+    background-repeat: no-repeat;
+    padding: 20px 40px 10px 50px;
+    font-size: 13px;
+    outline: none;
+}
+
+.form-input input[type=password] {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid var(--abu);
+    background-color: var(--putih);
+    background-image: url('../Assets/icon/password.svg');
+    background-position: 20px 20px; 
+    background-repeat: no-repeat;
+    padding: 20px 40px 10px 50px;
+    font-size: 13px;
+    outline: none;
+}
+
+.forgot-password{
+    display: flex;
+    justify-content: right;
+    margin-top: 16px;
+}
+
+.forgot-password a{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--abu);
+    cursor: pointer;
+}
+
+.button-login{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 121px;
+}
+
+.button-login button{
+    width: 328px;
+    height: 48px;
+    background-color: var(--kuning);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: var(--hitam-button);
+    cursor: pointer;
+}
+
+.button-login button:hover{
+    background-color: var(--kuning-hover);
+}
+
+.by{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+/* START BOTTOM SHEET */
+#overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: flex-end;
+    justify-content: center;
+    display: none;
+}
+
+#overlay.active{
+    display: flex;
+}
+
+#bottomSheet{
+    background-color: var(--putih);
+    width: 328px;
+    height: 387px;
+    border-radius: 5px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    margin: auto;
+}
+
+#bottomSheet.active{
+    transform: translateY(0);
+}
+
+.title-bottom{
+    margin-top: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.choose-store{
+    width: 296px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 29px;
+}
+
+.choose-store p{
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+
+.radio-store{
+    width: 296px;
+    height: 50px;
+    border: 1px solid var(--abu);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.radio-store:hover{
+    background-color: var(--kuning);
+    border: 1px solid transparent;
+}
+
+.section-store{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    margin: 13px auto;
+    align-content: center;
+}
+
+.section-store label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-store input[type=radio]{
+    width: 20px;
+    height: 20px;
+}
+
+.button-next-login{
+    width: 296px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.btn-in{
+    height: 48px;
+    width: 143px;
+    font-size: 16px;
+    color: var(--hitam-button);
+    background: var(--kuning);
+    border-radius: 8px;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-out{
+    height: 48px;
+    width: 143px;
+    font-size: 16px;
+    color: var(--kuning);
+    background: var(--putih);
+    border-radius: 8px;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+    border: 1px solid var(--kuning);
+    outline: none;
+    cursor: pointer;
+}
+
+.button-next-login a{
+    text-decoration: none;
+}
+/* END BOTTOM SHEET */
+
+
+
+/* START BOTTOM SHEET */
+#overlay-2{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: flex-end;
+    justify-content: center;
+    display: none;
+}
+
+#overlay-2.active{
+    display: flex;
+}
+
+#bottomSheet-2{
+    background-color: var(--putih);
+    width: 360px;
+    height: 291px;
+    border-radius: 5px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+#bottomSheet-2.active{
+    transform: translateY(0);
+}
+
+.button-close{
+    display: flex;
+    justify-content: right;
+    margin: 5px 8px;
+}
+
+.form-opening{
+    width: 328px;
+    height: 79px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-opening input[type=text] {
+    width: 328px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid var(--abu);
+    background-color: var(--putih);
+    background-position: 20px 20px; 
+    background-repeat: no-repeat;
+    padding: 20px 40px 10px 50px;
+    font-size: 13px;
+    outline: none;
+}
+
+.btn-opening{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* margin-top: 32px; */
+}
+
+.btn-opening button{
+    width: 328px;
+    height: 48px;
+    background-color: var(--kuning);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: var(--hitam-button);
+    cursor: pointer;
+}

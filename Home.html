@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Home.css">
+    <title>Sandbox - Mini POS</title>
+</head>
+<body>
+    <div class="container-mobile">
+      <!-- START STATUS BAR -->
+      <div class="status-bar">
+        <img src="Assets/status bar.png" alt="">
+      </div>
+      <!-- END STATUS BAR -->
+
+      <!-- START DETAIL USER -->
+      <div class="name">
+        <p>Hi, Jonathan Adrian</p>
+        <p>Kasir | McDonalds PVJ</p>
+      </div>
+      <!-- END DETAIL USER -->
+
+      <!-- START INFO -->
+      <div class="info">
+        <div class="section-info">
+
+          <div class="title-info">
+            <p>Tanggal</p>
+            <p>30/07/2022</p>
+          </div>
+
+          <div class="line"></div>
+          
+          <div class="title-info">
+            <p>Cash POS</p>
+            <p>Rp. 10.250.000</p>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="title-info">
+            <p>Tutup Kasir</p>
+            <img src="Assets/icon/tutup-kasir.svg" alt="" onclick="closing()">
+          </div>
+        </div>
+      </div>
+      <!-- END INFO -->
+      
+      <!-- START MENU -->
+      <div class="section-menu">
+        <div class="container-menu">
+
+         <div class="card-menu update-border" onclick="redirect()">
+           <div class="title-menu">
+              <div class="title-menu-order">
+                <img src="Assets/icon/menu-order.svg" alt="">
+                <p>Order</p>
+              </div>
+              <div class="info-update">
+                <img src="Assets/icon/info-update.svg" alt="">
+              </div>
+           </div>
+           <div class="total">
+             <p>88</p>
+           </div>
+           <div class="status">
+             <p>Pesanan</p>
+           </div>
+          </div>
+
+          <div class="card-menu">
+            <div class="title-menu">
+              <div class="title-menu-order">
+                <img src="Assets/icon/menu-waiting.svg" alt="">
+                <p>Waiting Payment</p>
+              </div>
+              <div class="info-update">
+                <!-- <img src="Assets/icon/info-update.svg" alt=""> -->
+              </div>
+            </div>
+            <div class="total">
+              <p>88</p>
+            </div>
+            <div class="status">
+              <p>menunggu pembayaran</p>
+            </div>
+          </div>
+
+          <div class="card-menu">
+            <div class="title-menu">
+              <div class="title-menu-order">
+                <img src="Assets/icon/menu-paid.svg" alt="">
+                <p>Paid</p>
+              </div>
+              <div class="info-update">
+                <!-- <img src="Assets/icon/info-update.svg" alt=""> -->
+              </div>
+            </div>
+            <div class="total">
+              <p>75</p>
+            </div>
+            <div class="status">
+              <p>Dibayar</p>
+            </div>
+          </div>
+
+          <div class="card-menu">
+            <div class="title-menu">
+              <div class="title-menu-order">
+                <img src="Assets/icon/menu-cancel.svg" alt="">
+                <p>Canceled</p>
+              </div>
+              <div class="info-update">
+                <!-- <img src="Assets/icon/info-update.svg" alt=""> -->
+              </div>
+            </div>
+            <div class="total">
+              <p>03</p>
+            </div>
+            <div class="status">
+              <p>Dibatalkan</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="menuBottom">
+          <a href="Home.html">
+            <button>
+              <img src="Assets/icon/Home-Active.svg" alt="">
+            </button>
+          </a>
+
+          <a href="Product.html">
+            <button>
+              <img src="Assets/icon/Product.svg" alt="">
+            </button>
+          </a>
+
+          <a href="List-Pembayaran.html">
+            <button>
+              <img src="Assets/icon/List-Confirm.svg" alt="">
+            </button>
+          </a>
+
+          <a href="Akun.html">
+            <button>
+              <img src="Assets/icon/Profile.svg" alt="">
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- END MENU -->
+    </div>
+
+    <script src="Scripts/Home.js"></script>
+</body>
+</html>

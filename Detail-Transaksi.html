@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Detail-Transaksi.css">
+    <title>Sandbox - Mini POS</title>
+</head>
+<body>
+    <div class="container-mobile">
+      <!-- START STATUS BAR -->
+      <div class="status-bar">
+        <img src="Assets/status bar.png" alt="">
+      </div>
+      <!-- END STATUS BAR -->
+
+      <!-- START HEADER -->
+      <div class="header-title">
+        <div class="icon-header-title" onclick="back()">
+          <img src="Assets/icon/icon-back.svg" alt="">
+        </div>
+        <div class="title-header">
+          <p>Transaksi Detail</p>
+        </div>
+      </div>
+      <!-- END HEADER -->
+
+      <!-- START TITLE -->
+      <div class="container-title">
+        <div class="section-title">
+          <label>Tanggal</label>
+          <input type="text">
+        </div>
+
+        <div class="section-title">
+          <label>Nama Pemesan</label>
+          <input type="text" placeholder="Masukan nama pemesan">
+        </div>
+
+        <div class="section-title">
+          <label>No.Hp Pemesan</label>
+          <input type="text" placeholder="Masukan no hp pemesan">
+        </div>
+
+        <div class="btn-member">
+          <button>
+            <p>Cek Member</p>
+            <img src="Assets/icon/icon-cek-member.png" alt="">
+          </button>
+        </div>
+      </div>
+      <!-- END TITLE -->
+
+      <!-- START TRANSAKSI -->
+      <div class="container-transaksi">
+        <div class="title-transaksi">
+          <p>Produk</p>
+          <p>QTY</p>
+          <p>Harga</p>
+        </div>
+
+        <div class="article-transaksi">
+          <div class="product-transaksi">
+            <div class="img-product">
+              <img src="Assets/img-burger.png" alt="">
+            </div>
+            <div class="title-product-transaksi">
+              <p>The OG Got Beef</p>
+              <p>Extra Patty</p>
+              <p>Mashed Potato</p>
+              <p>Cola</p>
+            </div>
+          </div>
+          <div class="jumlah">
+            <p>1</p>
+          </div>
+          <div class="harga">
+            <p>Rp 75.000</p>
+          </div>
+        </div>
+
+        <div class="line-transaksi"></div>
+
+        <div class="article-transaksi">
+          <div class="product-transaksi">
+            <div class="img-product">
+              <img src="Assets/img-burger.png" alt="">
+            </div>
+            <div class="title-product-transaksi">
+              <p>Supreme Burger</p>
+            </div>
+          </div>
+          <div class="jumlah">
+            <p>1</p>
+          </div>
+          <div class="harga">
+            <p>Rp 115.000</p>
+          </div>
+        </div>
+
+        <div class="line-transaksi"></div>
+
+        <div class="article-transaksi">
+          <div class="product-transaksi">
+            <div class="title-product-transaksi">
+              <p>Tax 11%</p>
+             </div>
+          </div>
+        <div class="harga">
+            <p>Rp 20.900</p>
+          </div>
+        </div>
+
+        <div class="article-transaksi">
+          <div class="product-transaksi">
+           <div class="title-product-transaksi">
+              <p>Services  1%</p>
+             </div>
+          </div>
+        <div class="harga">
+            <p>Rp 1.900</p>
+          </div>
+        </div>
+
+        <div class="article-transaksi">
+          <div class="product-transaksi">
+          <div class="title-product-transaksi">
+              <p>Total</p>
+             </div>
+          </div>
+          <div class="harga">
+            <p>Rp 265.000</p>
+          </div>
+        </div>
+
+        <div class="grand-total">
+          <p>Grand Total</p>
+          <p>Rp 252.800</p>
+        </div>
+      </div>
+      <!-- END TRANSAKSI -->
+
+      <!-- START LOYALITY -->
+      <div class="loyality">
+        <p>Loyalty Point Kamu <span>Rp. 100.000</span></p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <!-- END LOYALITY -->
+
+      <!-- START PILIH PEMBAYARAN -->
+      <div class="pembayaran">
+        <p>Pilih Pembayaran</p>
+        <div class="pilih-pembayaran">
+          
+          <a href="">
+            <div class="tipe-pembayaran">
+              <input type="radio">
+              <label for="html">Cash</label>
+            </div>
+          </a>
+
+          <a href="Transaksi-QRIS.html">
+            <div class="tipe-pembayaran">
+              <input type="radio">
+              <label for="html">QRIS</label>
+            </div>
+          </a>
+
+          <div class="tipe-pembayaran" onclick="show3()">
+            <input type="radio">
+            <label for="html">Debit/Credit</label>
+          </div>
+        </div>
+      </div>
+      <!-- END PILIH PEMBAYARAN -->
+
+      <!-- START BUTTON -->
+      <div class="button-transaksi">
+        <a href="#"><button class="btn-next" onclick="show4()" >Cetak Receipt</button></a>
+       <button class="btn-back"  onclick="show()">Batal</button>
+      </div>
+      <!-- END BUTTON -->
+    </div>
+
+
+    <!-- START BOTTOM SHEET 1 -->
+    <div onclick="hideOverlay()" id="overlay">
+      <div id="bottomSheet">
+        <div class="logo-bottom-sheet">
+          <img src="Assets/icon/icon-popup-transaksi.svg" alt="">
+        </div>
+
+        <div class="title-bottomsheet">
+          <p>Apakah transaksi ini akan batalkan..??</p>
+        </div>
+
+        <div class="btn-bottomsheet">
+          <button class="btn-ya" onclick="show2()">Ya</button>
+          <a href="Home.html"><button class="btn-tidak">Tidak</button></a>
+        </div>
+      </div>
+    </div>    
+    <!-- END BOTTOM SHEET 1 -->
+
+     <!-- START BOTTOM SHEET 2 -->
+     <div onclick="hideOverlay2()" id="overlay-2">
+      <div id="bottomSheet-2">
+        <div class="container-batal">
+          <div class="img-batal">
+            <img src="Assets/icon/icon-checked.png" alt="">
+          <div class="title-bottomsheet">
+            <p>Transaksi telah di batalkan</p>
+          </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>    
+    <!-- END BOTTOM SHEET 2 -->
+
+
+
+     <!-- START BOTTOM SHEET 3 -->
+     <div  id="overlay-3">
+      <div id="bottomSheet-3">
+        <div class="close" onclick="hideOverlay3()"> 
+          <img src="Assets/icon/close-kuning.svg" alt="">
+        </div>
+        <div class="header-credit-debit">
+          <p>Virtual Account</p>
+          <p>Pilih jenis virtual account untuk melakukan transaksi</p>
+        </div>
+
+        <div class="choose-bank">
+
+          <div class="conteiner-bank">
+            <div class="input-bank">
+              <input type="radio">
+            </div>
+            <div class="nama-bank">
+              <img src="Assets/icon/BCA.png" alt="">
+              <p>Virtual Account Bank BCA</p>
+            </div>
+          </div>
+          <div class="line-bank"></div>
+
+          <div class="conteiner-bank">
+            <div class="input-bank">
+              <input type="radio">
+            </div>
+            <div class="nama-bank">
+              <img src="Assets/icon/Mandiri.png" alt="">
+              <p>Virtual Account Bank Mandiri</p>
+            </div>
+          </div>
+          <div class="line-bank"></div>
+
+          <div class="conteiner-bank">
+            <div class="input-bank">
+              <input type="radio">
+            </div>
+            <div class="nama-bank">
+              <img src="Assets/icon/BRI.png" alt="">
+              <p>Virtual Account Bank BRI</p>
+            </div>
+          </div>
+          <div class="line-bank"></div>
+
+
+        </div>
+
+        <div class="button-pilih">
+          <button>Pilih</button>
+        </div>
+      </div>
+    </div>    
+    <!-- END BOTTOM SHEET 3 -->
+
+    <!-- START BOTTOM SHEET 4 -->
+    <div id="overlay-4">
+      <div id="bottomSheet-4">
+        <div class="container-confirm">
+          <div class="close" onclick="hideOverlay4()"> 
+            <img src="Assets/icon/close-kuning.svg" alt="">
+          </div>
+          <div class="logo-bottom-sheet">
+            <img src="Assets/icon/icon-popup-transaksi.svg" alt="">
+          </div>
+
+          <div class="title-confirmasi">
+            <p>Apakah transaksi sudah dibayarkan ?</p>
+            <div class="print">
+              <p>Print Struk Belanja</p>
+              <div class="line-print"></div>
+            </div>
+          </div>
+          <div class="btn-bottomsheet">
+            <button class="btn-ya">Ya</button>
+            <a href="Home.html"><button class="btn-tidak">Tidak</button></a>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- END BOTTOM SHEET 4 -->
+
+
+  
+
+
+    <script src="Scripts/Detail-Transaksi.js"></script>
+</body>
+</html>

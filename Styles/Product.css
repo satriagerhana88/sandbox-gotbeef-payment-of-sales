@@ -1,0 +1,533 @@
+/* START GENERAL STYLE */
+@import url('https://fonts.cdnfonts.com/css/d-din');
+
+:root {
+    --hitam:#010101;
+    --abu: #BABABA;
+    --putih : #ffffff;
+    --hitam-button : #333333;
+    --kuning : #FFC535;
+    --kuning-hover : #ecae11;
+    --kuning-muda :#FFEE8E;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'D-DIN', sans-serif;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+.container-mobile{
+    width: 360px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 16px;
+    /* background-image: url(../Assets/Bg-Login.svg); */
+    background-color: var(--putih);
+}
+
+.status-bar{
+    margin-bottom: 16px;
+}
+/* END GENERAL STYLE */
+
+/* START HEADER */
+.header-title{
+    margin: 0 16px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-header-title{
+    cursor: pointer;
+}
+
+.header-title p{
+    font-size: 20px;
+}
+/* END HEADER */
+
+/* START SEARCH */
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 16px auto;
+    width: 328px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid var(--abu);
+    padding: 16px;
+}
+
+.search input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 16px;
+}
+/* END SEARCH */
+
+/* START KATEGORI */
+.kategori{
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu-kategori{
+    width: 55px;
+    height: 30px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-kategori p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.menu-kategori:hover{
+    border: none;
+    border-bottom: 2px solid var(--hitam);
+}
+/* END KATEGORI */
+
+/* START PRODUCT */
+.product-kategori{
+    width: 328px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-product{
+    width: 156px;
+    height: 159px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    background-image: url('../Assets/daging.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.custome{
+    width: 78px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.545);
+    margin-left: 78px;
+    margin-bottom: 94px;
+    cursor: pointer;
+}
+
+.custome p{
+    font-size: 11px;
+    color: var(--putih);
+    text-align: center;
+}
+
+.detail-product{
+    width: 156px;
+    height: 51px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 4px 8px;
+
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.title p{
+   font-size: 14px;
+   color: var(--putih);
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.add p{
+    font-size: 14px;
+    color: var(--putih);
+}
+/* END PRODUCT */
+
+/* START BUTTON */
+.btn-add button{
+    width: 60px;
+    height: 25px;
+    background-color: var(--kuning);
+    border-radius: 3px;
+    color: var(--hitam-button);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-add{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.button-add button{
+    width: 328px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--kuning);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--hitam-button);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+
+}
+/* END BUTTON */
+
+/* START MENU */
+.menuBottom{
+    width: 310px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.menuBottom button{
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menuBottom button:hover{
+    background-color: var(--kuning);
+    border-radius: 15px;
+}
+/* END MENU */
+
+
+
+
+/* START BOTTOM SHEET 1 */
+#overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: flex-end;
+    justify-content: center;
+    display: none;
+}
+
+#overlay.active{
+    display: flex;
+}
+
+#bottomSheet{
+    background-color: var(--putih);
+    width: 328px;
+    height: 261px;
+    border-radius: 5px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    margin: auto;
+}
+
+#bottomSheet.active{
+    transform: translateY(0);
+}
+
+#bottomSheet .container-batal{
+    width: 210px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#bottomSheet .container-batal img{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+/* START BOTTOM SHEET 1 */
+
+/* START BOTTOM SHEET 2 */
+#overlay-2{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: flex-end;
+    justify-content: center;
+    display: none;
+}
+
+#overlay-2.active{
+    display: flex;
+}
+
+#bottomSheet-2{
+    background-color: var(--putih);
+    width: 360px;
+    height: 389px;
+    border-radius: 20px 20px 0 0;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+#bottomSheet-2.active{
+    transform: translateY(0);
+}
+
+.title-bottom{
+    margin-top: 47px;
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+.header-bottomsheet{
+    width: 360px;
+    height: 192px;
+    background-image: url('../Assets/daging.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.header-bottomsheet .close{
+    display: flex;
+    justify-content: right;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+#bottomSheet-2 .desc{
+    width: 329px;
+    height: 74px;
+    margin: 35px 16px;
+
+}
+
+.detail-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-desc p:nth-child(1){
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.detail-desc p:nth-child(2){
+    font-size: 25px;
+}
+
+.harga{
+    margin-top: 4px;
+    width: 328px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.harga p:nth-child(1){
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.add-cart{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.add-cart .counter{
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+    
+}
+
+#bottomSheet-2 .btn-add-cart button{
+    width: 328px;
+    height: 45px;
+    background-color: var(--kuning);
+    border-radius: 3px;
+    color: var(--hitam-button);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-add-cart {
+    display: flex;
+    justify-content: center;
+}
+/* END BOTTOM SHEET 2 */
+
+/* START BOTTOM SHEET 3 */
+#overlay-3{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: flex-end;
+    justify-content: center;
+    display: none;
+}
+
+#overlay-3.active{
+    display: flex;
+}
+
+#bottomSheet-3{
+    background-color: var(--putih);
+    width: 360px;
+    height: 597px;
+    border-radius: 20px 20px 0 0;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+#bottomSheet-3.active{
+    transform: translateY(0);
+}
+
+.header-bottomsheet3{
+    width: 360px;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    background-image: url('../Assets/header-custome.png');
+}
+
+.header-bottomsheet3 .close{
+    display: flex;
+    justify-content: right;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.title-bottomsheet3{
+    margin: 25px 16px 0 16px;
+}
+
+.title-bottomsheet3 p:nth-child(1){
+    font-size: 35px;
+    color: var(--putih);
+}
+
+.title-bottomsheet3 p:nth-child(2){
+    font-size: 24px;
+    color: var(--putih);
+}
+
+.add-ons{
+    width: 360px;
+    height: 172px;
+    /* border: 1px solid red; */
+}
+
+.title-add-ons{
+    width: 360px;
+    height: 32px;
+    background-color: var(--kuning-muda);
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+.title-add-ons p{
+    font-size: 12px;
+    color: var(--hitam-button);
+}
+
+.check-add-ons{
+    width: 328px;
+    height: 132px;
+    margin: 8px 16px 0 16px;
+}
+
+.checked{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check input[type=checkbox]{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.check label{
+    font-size: 14px;
+}
+
+.checked .price-add p{
+    font-size: 14px;
+}
+
+.button-bottom3{
+    width: 328px;
+    height: 48px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-bottom3 button{
+    width: 209px;
+    height: 48px;
+    background-color: var(--kuning);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+    cursor: pointer;
+}
+/* END BOTTOM SHEET 3 */

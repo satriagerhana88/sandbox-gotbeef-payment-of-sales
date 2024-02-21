@@ -1,0 +1,240 @@
+/* START GENERAL STYLE */
+@import url('https://fonts.cdnfonts.com/css/d-din');
+
+:root {
+    --hitam:#010101;
+    --abu: #BABABA;
+    --putih : #ffffff;
+    --hitam-button : #333333;
+    --kuning : #FFC535;
+    --kuning-hover : #ecae11;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'D-DIN', sans-serif;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+.container-mobile{
+    width: 360px;
+    height: 800px;
+    margin: auto;
+    background-image: url(../Assets/Bg-Login.svg);
+}
+
+.status-bar{
+    margin-bottom: 52px;
+}
+/* END GENERAL STYLE */
+
+/* START DETAIL KASIR */
+.name{
+    width: 158px;
+    height: 40px;
+    text-align: center;
+    margin: 40px auto 50px auto;
+}
+
+.name p:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.name p:nth-child(2){
+    font-size: 13px;
+    font-weight: 100;
+}
+/* END DETAIL KASIR */
+
+/* START INFO CLOSING */
+.info-closing{
+    width: 328px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 10px 16px;
+    background-color: var(--putih);
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+}
+
+.detail-info-closing{
+    width: 298px;
+    height: 98px;
+}
+
+.line-info{
+    width: 100%;
+    border: 1px solid var(--abu);
+    margin-top: 8px;
+}
+
+.info-pos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.detail-info-pos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* END INFO CLOSING */
+
+/* START CONTENT */
+.container-closing{
+    width: 360px;
+    height: 570px;
+    background-color: var(--putih);
+    border-radius: 30px 30px 0 0;
+    margin-top: -60px;
+    z-index: -1;
+    padding-top: 100px;
+}
+
+.title-container p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-closing{
+    width: 328px;
+    height: 67px;
+    margin: 16px auto;
+}
+
+.input-closing input[type=number]{
+    width: 328px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid var(--abu);
+    padding: 0 8px;
+    text-align: right;
+    outline: none;
+}
+
+.input-closing input[type=number]::placeholder{
+    text-align: right;
+}
+
+.input-closing input[type=text]{
+    width: 328px;
+    height: 130px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid var(--abu);
+    padding: 0 8px;
+    outline: none;
+}
+
+.btn-closing{
+    width: 328px;
+    height: 107px;
+    margin: 143px auto;
+}
+
+.btn-closing .next{
+    width: 328px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--kuning);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--hitam-button);
+    box-shadow: 0px 8px 10px 0px #0000001F;
+}
+
+.btn-closing .back{
+    width: 328px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--putih);
+    border: 1px solid var(--kuning);
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--kuning);
+    margin-top: 11px;
+    box-shadow: 0px 8px 10px 0px #0000001F;
+}
+/* END CONTENT */
+
+
+/* START BOTTOM SHEET 1 */
+#overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: flex-end;
+    justify-content: center;
+    display: none;
+    z-index: 1;
+}
+
+#overlay.active{
+    display: flex;
+}
+
+#bottomSheet{
+    background-color: var(--putih);
+    width: 328px;
+    height: 261px;
+    border-radius: 5px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    margin: auto;
+}
+
+#bottomSheet.active{
+    transform: translateY(0);
+}
+
+#bottomSheet .container-batal{
+    width: 180px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#bottomSheet .container-batal p{
+    text-align: center;
+}
+
+#bottomSheet .container-batal img{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+#bottomSheet .btn-ok {
+    width: 300px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--kuning);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--hitam-button);
+    box-shadow: 0px 8px 10px 0px #0000001F;
+}
+/* END BOTTOM SHEET 1 */

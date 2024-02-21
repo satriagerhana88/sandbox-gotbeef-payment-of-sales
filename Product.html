@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Product.css">
+    <title>Sandbox - Mini POS</title>
+</head>
+<body>
+    <div class="container-mobile">
+      <!-- START STATUS BAR -->
+      <div class="status-bar">
+        <img src="Assets/status bar.png" alt="">
+      </div>
+      <!-- END STATUS BAR -->
+
+      <!-- START HEADER -->
+      <div class="header-title">
+        <div class="icon-header-title" onclick="back()">
+          <img src="Assets/icon/icon-back.svg" alt="">
+        </div>
+        <div class="title-header">
+          <p>Product</p>
+        </div>
+      </div>
+      <!-- END HEADER -->
+
+      <!-- START SEARCH -->
+      <div class="search">
+        <img src="Assets/icon/search.svg" alt="">
+        <input type="text" placeholder="Cari produk pilihanmu" name="search">
+      </div>
+      <!-- END SEARCH -->
+
+      <!-- START KATEGORI -->
+      <div class="kategori">
+        <div class="menu-kategori">
+          <p>All</p>
+        </div>
+        <div class="menu-kategori">
+          <p>Daging</p>
+        </div>
+        <div class="menu-kategori">
+          <p>Sayur</p>
+        </div>
+        <div class="menu-kategori">
+          <p>Beras</p>
+        </div>
+        <div class="menu-kategori">
+          <p>Bumbu</p>
+        </div>
+      </div>
+      <!-- END KATEGORI -->
+
+      <!-- START PRODUCT -->
+      <div class="product-kategori">
+        <div class="card-product">
+          <div class="custome" onclick="custome()">
+            <p>customizeable</p>
+          </div>
+          <div class="detail-product">
+            <div class="title">
+              <p>Ikan Tuna Segar</p>
+            </div>
+
+            <div class="add">
+              <p>Rp. 100.000</p>
+              <div class="btn-add">
+                <button onclick="showadd()">add +</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div class="custome" onclick="custome()">
+            <p>customizeable</p>
+          </div>
+          <div class="detail-product">
+            <div class="title">
+              <p>Ikan Tuna Segar</p>
+            </div>
+
+            <div class="add">
+              <p>Rp. 100.000</p>
+              <div class="btn-add">
+                <button onclick="showadd()">add +</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div class="custome" onclick="custome()">
+            <p>customizeable</p>
+          </div>
+          <div class="detail-product">
+            <div class="title">
+              <p>Ikan Tuna Segar</p>
+            </div>
+
+            <div class="add">
+              <p>Rp. 100.000</p>
+              <div class="btn-add">
+                <button onclick="showadd()">add +</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div class="custome" onclick="custome()">
+            <p>customizeable</p>
+          </div>
+          <div class="detail-product">
+            <div class="title">
+              <p>Ikan Tuna Segar</p>
+            </div>
+
+            <div class="add">
+              <p>Rp. 100.000</p>
+              <div class="btn-add">
+                <button onclick="showadd()">add +</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div class="custome" onclick="custome()">
+            <p>customizeable</p>
+          </div>
+          <div class="detail-product">
+            <div class="title">
+              <p>Ikan Tuna Segar</p>
+            </div>
+
+            <div class="add">
+              <p>Rp. 100.000</p>
+              <div class="btn-add">
+                <button onclick="showadd()">add +</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div class="custome" onclick="custome()">
+            <p>customizeable</p>
+          </div>
+          <div class="detail-product">
+            <div class="title">
+              <p>Ikan Tuna Segar</p>
+            </div>
+
+            <div class="add">
+              <p>Rp. 100.000</p>
+              <div class="btn-add">
+                <button onclick="showadd()">add +</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END PRODUCT -->
+
+      <!-- START BUTTON -->
+      <div class="button-add" onclick="cart()">
+        <button>
+          <img src="Assets/icon/cart.svg" alt="">
+          cart (100)
+        </button>
+      </div>
+      <!-- END BUTTON -->
+
+      <!-- START MENU -->
+      <div class="menuBottom">
+        <a href="Home.html">
+          <button>
+            <img src="Assets/icon/Home.svg" alt="">
+          </button>
+        </a>
+
+        <a href="Product.html">
+          <button>
+            <img src="Assets/icon/Product-Active.svg" alt="">
+          </button>
+        </a>
+
+        <a href="List-Pembayaran.html">
+          <button>
+            <img src="Assets/icon/List-Confirm.svg" alt="">
+          </button>
+        </a>
+
+        <a href="Akun.html">
+          <button>
+            <img src="Assets/icon/Profile.svg" alt="">
+          </button>
+        </a>
+      </div>
+      <!-- END MENU -->
+    </div>
+
+
+
+    <!-- START BOTTOM SHEET 1 -->
+    <div onclick="hideOverlay()" id="overlay">
+      <div id="bottomSheet">
+        <div class="container-batal">
+          <div class="img-batal">
+            <img src="Assets/icon/icon-checked.png" alt="">
+          <div class="title-bottomsheet">
+            <p>Product berhasil ditambahkan</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- END BOTTOM SHEET 1 -->
+
+    
+
+     <!-- START BOTTOM SHEET 2-->
+     <div onclick="hideOverlay2()" id="overlay-2">
+      <div id="bottomSheet-2">
+          <div class="header-bottomsheet">
+            <div class="close" onclick="hideOverlay4()"> 
+              <img src="Assets/icon/close-kuning.svg" alt="">
+            </div>
+          </div>
+
+          <div class="desc">
+            <div class="detail-desc">
+              <p>Daging</p>
+              <p>Ikan Tuna Segar</p>
+              <div class="harga">
+                <p>Rp. 100.000</p>
+                <div class="add-cart">
+                  <div class="counter">
+                    <img src="Assets/icon/minus.svg" alt="">
+                  </div>
+                  <p>1</p>
+                  <div class="counter">
+                    <img src="Assets/icon/plus.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-add-cart">
+            <button  onclick="show()">Add +</button>
+          </div>
+      </div>    
+  </div>
+  <!-- END BOTTOM SHEET 2-->
+
+  <!-- START BOTTOM SHEET 3-->
+  <div id="overlay-3">
+    <div id="bottomSheet-3">
+      <div class="header-bottomsheet3">
+        <div class="close" onclick="hideOverlay3()"> 
+          <img src="Assets/icon/close-kuning.svg" alt="">
+        </div>
+        <div class="title-bottomsheet3">
+          <p>The OG Got Beef</p>
+          <p>Rp. 25.000</p>
+        </div>
+      </div>
+
+      <div class="add-ons">
+        <div class="title-add-ons">
+          <p>Tambahan</p>
+        </div>
+
+        <div class="check-add-ons">
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">Extra Patty</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 24.000</p>
+            </div>
+          </div>
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">Extra Eggs</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 10.000</p>
+            </div>
+          </div>
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">French Fries</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 20.000</p>
+            </div>
+          </div>
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">Mashed Potato</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 20.000</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="add-ons">
+        <div class="title-add-ons">
+          <p>Minuman</p>
+        </div>
+
+        <div class="check-add-ons">
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">Cola</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 15.000</p>
+            </div>
+          </div>
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">Milo</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 10.000</p>
+            </div>
+          </div>
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">Mocha Float</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 12.000</p>
+            </div>
+          </div>
+
+          <div class="checked">
+            <div class="check">
+              <input type="checkbox">
+              <label for="vehicle1">Manggo Floar</label><br>
+            </div>
+
+            <div class="price-add">
+              <p>Rp. 12.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-bottom3">
+        <div class="btn-add-bottom3">
+          <button  onclick="show()">Add +</button>
+        </div>
+
+        <div class="add-cart">
+          <div class="counter">
+            <img src="Assets/icon/minus.svg" alt="">
+          </div>
+          <p>1</p>
+          <div class="counter">
+            <img src="Assets/icon/plus.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>    
+</div>
+<!-- END BOTTOM SHEET 3-->
+
+
+<script src="Scripts/Product.js"></script>
+</body>
+</html>

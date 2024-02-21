@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Closing.css">
+    <title>Sandbox - Mini POS</title>
+</head>
+<body>
+    <div class="container-mobile">
+      <!-- START STATUS BAR -->
+      <div class="status-bar">
+        <img src="Assets/status bar.png" alt="">
+      </div>
+      <!-- END STATUS BAR -->
+
+      <!-- START DETAIL KASIR -->
+      <div class="name">
+        <p>Hi, Jonathan Adrian</p>
+        <p>Kasir | McDonalds PVJ</p>
+      </div>
+      <!-- END DETAIL KASIR -->
+
+      <!-- START INFO CLOSING -->
+      <div class="info-closing" id="info">
+        <div class="detail-info-closing">
+
+          <div class="info-pos">
+            <p>Tanggal : 01/12/2022</p>
+            <div class="line-info"></div>
+          </div>
+
+          <div class="info-pos">
+            <div class="detail-info-pos">
+              <p>Opening POS</p>
+              <p>Rp. 10.000.000</p>
+            </div>
+            <div class="line-info"></div>
+          </div>
+
+          <div class="info-pos">
+            <div class="detail-info-pos">
+              <p>Closing by System</p>
+              <p>Rp. 100.000.000</p>
+            </div>
+            <div class="line-info"></div>
+          </div>
+        </div>
+      </div>
+      <!-- END INFO CLOSING -->
+
+      <!-- START CONTENT -->
+      <div class="container-closing">
+          <div class="title-container">
+            <p>Closing</p>
+          </div>
+
+          <div class="input-closing">
+            <label for="">Closing by Kasir *</label>
+            <input type="number" name="" id="" placeholder="Rp. Isikan closing by kasir">
+          </div>
+
+          <div class="input-closing">
+            <label for="">Catatan (Opsional)</label>
+            <input type="text">
+          </div>
+
+          <div class="btn-closing">
+            <button class="next" onclick="show()">Tutup Kasir</button>
+            <button class="back" onclick="back()">Kembali</button>
+          </div>
+      </div>
+      <!-- END CONTENT -->
+    </div>
+
+      
+    <!-- START BOTTOM SHEET 1 -->
+    <div onclick="hideOverlay()" id="overlay">
+      <div id="bottomSheet">
+        <div class="container-batal">
+          <div class="img-batal">
+            <img src="Assets/icon/icon-checked.png" alt="">
+            <div class="title-bottomsheet">
+              <p>Closing POS Berhasil Terima Kasih</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- END BOTTOM SHEET 1-->
+
+    <script src="Scripts/Closing.js"></script>
+</body>
+</html>

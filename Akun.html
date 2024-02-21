@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Akun.css">
+    <title>Sandbox - Mini POS</title>
+</head>
+<body>
+    <div class="container-mobile">
+      <!-- START STATUS BAR -->
+      <div class="status-bar">
+        <img src="Assets/status bar.png" alt="">
+      </div>
+      <!-- END STATUS BAR -->
+
+      <!-- START DETAIL KASIR -->
+      <div class="user-login">
+        <div class="profile">
+            <p>Hi, Jonathan Adrian</p>
+            <p>Kasir</p>
+        </div>
+        <div class="btn-aktif">
+            <button>Aktif</button>
+        </div>
+      </div>
+      <!-- END DETAIL KASIR -->
+
+      <!-- START CONTENT -->
+      <div class="section">
+        <!-- START MENU PROFILE -->
+        <div class="setting-profile">
+            <button class="btn-ubah-profile" onclick="UpdateProfile()">
+                <img src="Assets/icon/Ubah-Profile.svg" alt="">
+                Update Profile
+            </button>
+            <button class="btn-ubah-password" onclick="UpdatePassword()">
+                <img src="Assets/icon/Ubah-Password.svg" alt="">
+                Update Password
+              </button>
+        </div>
+        <button class="btn-keluar" onclick="keluar()">
+          <img src="Assets/icon/Keluar.svg" alt="">
+          Keluar
+        </button>
+        <!-- END MENU PROFILE -->
+
+
+        <!-- START MENU -->
+        <div class="menuBottom">
+            <a href="Home.html">
+              <button>
+                <img src="Assets/icon/Home.svg" alt="">
+              </button>
+            </a>
+    
+            <a href="Product.html">
+              <button>
+                <img src="Assets/icon/Product.svg" alt="">
+              </button>
+            </a>
+    
+            <a href="List-Pembayaran.html">
+              <button>
+                <img src="Assets/icon/List-Confirm.svg" alt="">
+              </button>
+            </a>
+    
+            <a href="Akun.html">
+              <button>
+                <img src="Assets/icon/Profile-Active.svg" alt="">
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- END MENU -->
+        
+
+    </div>
+    <!-- END CONTENT -->
+
+
+    <script src="Scripts/Akun.js"></script>
+</body>
+</html>

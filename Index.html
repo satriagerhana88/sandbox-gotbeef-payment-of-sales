@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Login copy.css">
+    <title>Sandbox - Mini POS</title>
+</head>
+<body>
+    <div class="container-mobile">
+      <!-- START STATUS BAR -->
+      <div class="status-bar">
+        <img src="Assets/status bar.png" alt="">
+      </div>
+      <!-- END STATUS BAR -->
+
+      <!-- START LOGO -->
+      <div class="logo-sandbox">
+          <img src="Assets/logo-sandbox.svg" alt="">
+      </div>
+      <!-- END LOGO -->
+
+      <!-- START FORM -->
+      <div class="form-login">
+        <div class="text-form">
+          <p>Login</p>
+        </div>
+
+        <form action="#">
+          <div class="form-input">
+              <label for="email">Email *</label>
+              <input type="text" placeholder="Masukan Email Anda">
+          </div>
+          <div class="form-input">
+              <label for="email">Password *</label>
+              <input type="password" placeholder="Masukan Password Anda">
+          </div>
+
+          <div class="forgot-password">
+            <a href="Forgot-Password.html">Lupa Password.?</a>
+          </div>
+        </form>
+
+        <div class="button-login">
+          <button onclick="show()">Login</button>
+        </div>
+
+        <p class="by">2022 © All Reserved by Sanbox</p>
+      </div>
+      <!-- END FORM -->
+
+      <!-- START BOTTOM SHEET 1 -->
+      <div id="overlay">
+        <div id="bottomSheet">
+            <p class="title-bottom">Hi, Jonathan Adrian</p>
+            <div class="choose-store">
+              <p>Pilih Toko</p>
+              <div class="container-store">
+
+                <div class="radio-store">
+                  <div class="section-store">
+                    <label for="html">McD - BIP</label>
+                    <input type="radio">
+                  </div>
+                </div>
+
+                <div class="radio-store">
+                  <div class="section-store">
+                    <label for="html">McD - IP</label>
+                    <input type="radio">
+                  </div>
+                </div>
+
+                <div class="radio-store">
+                  <div class="section-store">
+                    <label for="html">McD - Buah Batu</label>
+                    <input type="radio">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="button-next-login">
+                  <button class="btn-in" onclick="openingPOS()">
+                      Masuk
+                  </button>
+              <a href="Index.html">
+                  <button class="btn-out">
+                      Keluar
+                  </button>
+              </a>
+
+            </div>
+        </div>    
+    </div>
+    <!-- END BOTTOM SHEET 1 -->
+
+
+    <!-- Start BOTTOM SHEET 2-->
+    <div id="overlay-2">
+      <div id="bottomSheet-2">
+        <div class="button-close">
+          <a href=""><img src="Assets/icon/close.png" alt=""></a>
+        </div>
+          <p class="title-bottom">Hi, Jonathan Adrian</p>
+
+            <div class="form-opening">
+              <label for="">Opening POS</label>
+              <input type="text" name="" id="" placeholder="Masukan nominal uang “OpeningPOS”">
+            </div>
+
+          <div class="btn-opening">
+            <a href="Home.html"><button>Selanjutnya</button></a>
+          </div>
+        </div>    
+    </div>
+  <!-- END BOTTOM SHEET 2-->
+
+
+    <script src="Scripts/login copy.js"></script>
+</body>
+</html>
